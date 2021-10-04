@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    min-height: 100vh;
+    min-width: 1160px;
+    color: #415167;
+    font-size: 24px;
+
+
+}
+
+.wrapper__site {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.container {
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+}
+.container__header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.header__inner {
+    height: 768px;
+    min-width: 100%;
+    display: flex;
+    .header__left {
+        width: 384px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        padding: 72px 0 64px 0;
+        .header__title {
+            position: relative;
+            left: 165px;
+            h1 {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 54px;
+                line-height: 70px;
+                color: #415167;
+                span {
+                    display: inline-block;
+                    margin-left: -15px;
+                    padding: 0 15px;
+                    background-color: #C7A17A;
+                    color: #EDF0F5;
+                }
+            }
+        }
+    }
+    .header__center {
+        height: 100%;
+        width: 693px;
+        &-bg {
+            min-height: 100%;
+            background-image: url(/images/header/header__bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .header__right {
+        width: 273px;
+        min-height: 100%;
+        background-color: #415167;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 72px 76px 261px 57px;
+
+        &-cart {
+            &__ico {
+                cursor: pointer;
+            }
+
+        }
+
+
+        &-nav {
+            &__title {
+                margin-bottom: 30px;
+                &-item{
+                    font-family: Nunito;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #EDF0F5;
+                }
+            }
+            &__list {
+                padding: 0;
+                list-style: none;
+                &-item {
+                    padding-bottom: 15px;
+                    a {
+                        text-decoration: none;
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #EDF0F5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.info__wrapper {
+    padding-top: 90px;
+    padding-bottom: 128px;
+    .info__inner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .info__inner-title {
+            margin-bottom: 95px;
+            .subtitle {
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #415167;
+            }
+            .title {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 30px;
+                line-height: 34px;
+                color: #415167;
+            }
+        }
+        .info__inner-items {
+            display: flex;
+            justify-content: space-between;
+            .info__inner-item {
+                width: 226px;
+                height: 246.43px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .item__img {
+                    margin-bottom: 40px;
+                }
+
+                .item__info {
+                    .title {
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: #232C38;
+                    }
+                    .info {
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 22px;
+                        text-align: center;
+                        color: #151D28;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slider__menu {
+    position: relative;
+
+    .slider__menu-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32%;
+        height: 100%;
+        background-color: #415167;
+        z-index: -1;
+    }
+
+
+    .slider__menu-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 894px;
+
+        .slider__menu-title {
+            text-align: center;
+            margin-bottom: 72px;
+            p {
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                color: #415167;
+            }
+
+            h3 {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 30px;
+                line-height: 34px;
+                color: #415167;
+            }
+        }
+
+        .slider__menu-items {
+            width: 100%;
+            position: relative;
+
+            .slick-arrow.slick-prev{
+                display: none;
+                font-size: 0;
+                background: transparent;
+                border: none;
+            }
+
+            .slick-arrow.slick-next {
+                position: absolute;
+                top: calc(50% - 44px);
+                right: -10%;
+                font-size: 0;
+                border: none;
+                background-color: transparent;
+                width: 88px;
+                height: 88px;
+                background-image: url(/images/info__slider/BTN_Right_Arrow.svg);
+                background-position: center;
+                background-size: cover;
+                cursor: pointer;
+                transition: all .5s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+
+            }
+
+            .slider__menu-item {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .item {
+                    flex: 0 0 520px;
+                    display: flex;
+                    justify-content: space-between;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    background-color: #fff;
+                    margin-bottom: 30px;
+
+                    &:nth-child(3) {
+                        margin-bottom: 10px;
+                    }
+
+                    &:nth-child(4) {
+                        margin-bottom: 10px;
+                    }
+
+
+
+
+
+                    .item__img {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .item__info {
+                        padding: 40px;
+                        background-color: #fff;
+
+                        .price {
+                            p {
+                                font-family: Nunito;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #C7A17A;
+                                padding-bottom: 8px;
+                            }
+                        }
+
+                        .title {
+                            h6 {
+                                font-family: Nunito;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 24px;
+                                line-height: 28px;
+                                color: #232C38;
+                                padding-bottom: 24px;
+                            }
+                        }
+
+                        .subtitle {
+                            p {
+                                font-family: Nunito;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: #151D28;
+                            }
+                        }
+
+                        .item__footer {
+                            margin-top: 25px;
+                            display: flex;
+
+                            a {
+                                font-family: Nunito;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 22px;
+                                text-align: center;
+                                padding: 6px 15px 8px 17px;
+                                background: #C7A17A;
+                                border-radius: 19px;
+                                color: #F9FBFF;
+                                margin-right: 18px;
+                            }
+
+                            p {
+                                font-family: Nunito;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: #415167;
+                                margin: auto;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+.cart {
+    width: 100%;
+    height: 802px;
+    position: relative;
+
+    .cart__bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #EDF0F5;
+        width: 70%;
+        height: 100%;
+    }
+    .cart__inner {
+        display: flex;
+        flex-direction: column;
+
+        .cart__title {
+            padding-top: 86px;
+            padding-bottom: 66px;
+            text-align: center;
+
+            .subtitle {
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #415167;
+            }
+
+            .title {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 30px;
+                line-height: 34px;
+                color: #415167;
+            }
+        }
+
+        .cart__main {
+            display: flex;
+            justify-content: flex-end;
+
+
+
+            .cart__main-box {
+                width: 794px;
+                display: flex;
+                background: #FFFFFF;
+                box-shadow: 1px 0px 10px rgba(205, 205, 205, 0.5);
+                position: relative;
+                padding: 64px 68px 64px 298px;
+                transition: all .5s;
+
+                .cart__main-imgbox {
+                    position: absolute;
+                    left: -33%;
+                }
+
+                .cart__main-infobox {
+                    display: flex;
+                    flex-direction: column;
+                    width: 430px;
+
+                    .cart__main-infobox_price {
+                        margin-bottom: 12px;
+                        .price {
+                            font-family: Nunito;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #C7A17A;
+                        }
+                    }
+
+                    .cart__main-infobox_title {
+                        margin-bottom: 12px;
+                        .price {
+                            font-family: Nunito;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 28px;
+                            color: #232C38;
+                        }
+                    }
+
+                    .cart__main-infobox_text {
+                        margin-bottom: 24px;
+                        width: 430px;
+                        .text {
+                            font-family: Nunito;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: #151D28;
+                        }
+                    }
+
+                    .cart__main-infobox_structure {
+                        display: flex;
+                        margin-bottom: 46px;
+
+                        .cart__main-infobox_structure-box {
+                            display: flex;
+                            margin-right: 58px;
+
+                            &:nth-child(2) {
+                                margin-right: 0;
+                            }
+                            .img {
+                                margin-right: 12px;
+                            }
+
+                            .text {
+                                font-family: Nunito;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: #415167;
+                            }
+                        }
+                    }
+
+                    .cart__main-infobox_footer {
+                        display: flex;
+
+                        .btn {
+                            padding: 9px 32px;
+                            background-color: #C7A17A;
+                            font-family: Nunito;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 22px;
+                            text-align: center;
+                            color: #F9FBFF;
+                            border-radius: 20px;
+                            margin-right: 133px;
+
+                        }
+
+                        .info {
+                            font-family: Nunito;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: #415167;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+
+            }
+
+            .box_none {
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
+
+            .cart__main-checkbox {
+                display: flex;
+                flex-direction: column;
+
+                .tabs__nav-btn{
+                    padding: 65px 37px 55px;
+                    background-color: #EDF0F5;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 30px;
+                    line-height: 34px;
+                    color: #415167;
+                    opacity: 0.3;
+                    border: none;
+                    cursor: pointer;
+
+                    &.active {
+                        background-color: #fff;
+                        border: 1px solid #EDF0F5;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.footer__slider {
+    height: 906px;
+    width: 100%;
+    padding: 88px 0 120px;
+    position: relative;
+    &-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 30%;
+        z-index: -1;
+        background-color: #415167;
+    }
+
+    &-inner {
+        display: flex;
+        flex-direction: column ;
+
+        .slider__title {
+            text-align: center;
+            margin-bottom: 64px;
+
+            .text {
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #415167;
+            }
+
+            .title {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 30px;
+                line-height: 34px;
+                color: #415167;
+            }
+        }
+
+        .slider__list {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+
+            .slider__item {
+                flex: 0 0 360px;
+                display: flex;
+                flex-direction: column;
+                background: #FFFFFF;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+                margin: 0 10px;
+
+
+
+
+                &-img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &-info {
+                    width: 360px;
+                    padding: 42px 30px;
+
+                    .item__price {
+                        display: flex;
+                        margin-bottom: 10px;
+
+                        .new__price {
+                            font-family: Nunito;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #C7A17A;
+                            margin-right: 20px;
+                        }
+
+                        .old__price {
+                            font-family: Nunito;
+                            font-style: italic;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 24px;
+                            text-decoration-line: line-through;
+                            color: #415167;
+                        }
+                    }
+
+                    .slider__item-title {
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: #232C38;
+                        margin-bottom: 10px;
+                    }
+
+                    .slider__item-text {
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: #151D28;
+                    }
+
+                    .cart__main-infobox_footer {
+                        margin-top: 32px;
+                        display: flex;
+
+                        .btn {
+                            padding: 9px 32px;
+                            background-color: #C7A17A;
+                            font-family: Nunito;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 22px;
+                            text-align: center;
+                            color: #F9FBFF;
+                            border-radius: 20px;
+                            margin-right: 54px;
+
+                        }
+
+                        .info {
+                            font-family: Nunito;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 39px;
+                            color: #415167;
+                        }
+                    }
+                }
+            }
+            .slick-arrow.slick-prev{
+                display: none;
+                font-size: 0;
+                background: transparent;
+                border: none;
+            }
+
+            .slick-arrow.slick-next {
+                position: absolute;
+                top: calc(50% - 44px);
+                right: -10%;
+                font-size: 0;
+                border: none;
+                background-color: transparent;
+                width: 88px;
+                height: 88px;
+                background-image: url(/images/info__slider/BTN_Right_Arrow.svg);
+                background-position: center;
+                background-size: cover;
+                cursor: pointer;
+                transition: all .5s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+
+            }
+        }
+    }
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background: #EDF0F5;
+
+    &__text{
+        font-family: Nunito;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #415167;
+    }
+}
